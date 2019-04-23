@@ -27,6 +27,7 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'jremmen/vim-ripgrep'
+Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-projectionist'
 Plug 'direnv/direnv.vim'
 Plug 'sgur/vim-editorconfig'
@@ -46,8 +47,11 @@ Plug 'chrisbra/Colorizer'
 Plug 'gregsexton/gitv'
 Plug 'mattn/gist-vim'
 Plug 'https://gitlab.com/Lenovsky/nuake.git'
-" Plug 'slashmili/alchemist.vim' 
 
+" Ruby
+Plug 'tpope/vim-rails'
+
+" Plug 'slashmili/alchemist.vim' 
 " Plug 'terryma/vim-multiple-cursors'
 " Plug 'aliou/mix.vim'
 " Plug 'samgranieri/vim-projectionist-elixir'
@@ -68,6 +72,7 @@ source ~/.config/nvim/sam/leader.vim
 source ~/.config/nvim/sam/git.vim
 source ~/.config/nvim/sam/projectionist.vim
 source ~/.config/nvim/sam/fuzzyfinder.vim
+source ~/.config/nvim/sam/grepping.vim
 "
 " " Sane tabs
 " syntax on
