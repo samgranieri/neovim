@@ -10,5 +10,7 @@ cnoreabbrev Wa wa
 cnoreabbrev wQ wq
 cnoreabbrev WQ wq
 cnoreabbrev W w
+cnoreabbrev Vsplit vsplit
+cnoreabbrev Split split
 cnoreabbrev Q q
 cnoreabbrev Qall qall
