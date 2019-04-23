@@ -67,7 +67,7 @@ source ~/.config/nvim/sam/abbreviations.vim
 source ~/.config/nvim/sam/leader.vim
 source ~/.config/nvim/sam/git.vim
 source ~/.config/nvim/sam/projectionist.vim
+source ~/.config/nvim/sam/fuzzyfinder.vim
 "
 " " Sane tabs
-" filetype plugin indent on
 " syntax on
