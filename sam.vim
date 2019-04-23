@@ -44,6 +44,7 @@ Plug 'godlygeek/csapprox'
 Plug 'chrisbra/Colorizer'
 Plug 'gregsexton/gitv'
 Plug 'mattn/gist-vim'
+Plug 'https://gitlab.com/Lenovsky/nuake.git'
 " Plug 'slashmili/alchemist.vim' 
 
 " Plug 'terryma/vim-multiple-cursors'
