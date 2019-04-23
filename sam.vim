@@ -3,6 +3,7 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall
 endif
 call plug#begin('~/.config/nvim/plugged')
+
 " Plug 'altercation/vim-colors-solarized'
 Plug 'iCyMind/NeoSolarized'
 Plug 'scrooloose/nerdtree'
