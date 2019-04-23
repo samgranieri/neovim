@@ -8,7 +8,7 @@ Plug 'iCyMind/NeoSolarized'
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tomtom/tcomment_vim'
-Plug 'tpope/vim-sensible' 
+Plug 'tpope/vim-sensible'
 Plug 'neomake/neomake'
 Plug 'sheerun/vim-polyglot'
 Plug 'mhinz/vim-mix-format'
@@ -25,7 +25,11 @@ Plug 'tpope/vim-dadbod'
 Plug 'tpope/vim-eunuch'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'itchyny/lightline.vim'
+
+" Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 Plug 'jremmen/vim-ripgrep'
 Plug 'mhinz/vim-grepper'
 Plug 'tpope/vim-projectionist'
@@ -51,19 +55,20 @@ Plug 'https://gitlab.com/Lenovsky/nuake.git'
 " Ruby
 Plug 'tpope/vim-rails'
 
-" Plug 'slashmili/alchemist.vim' 
+" Plug 'slashmili/alchemist.vim'
 " Plug 'terryma/vim-multiple-cursors'
 " Plug 'aliou/mix.vim'
 " Plug 'samgranieri/vim-projectionist-elixir'
 call plug#end()
 
 source ~/.config/nvim/sam/colorscheme.vim
+source ~/.config/nvim/sam/airline.vim
 source ~/.config/nvim/sam/nerdtree.vim
 source ~/.config/nvim/sam/tcomment.vim
 source ~/.config/nvim/sam/text.vim
 source ~/.config/nvim/sam/neomake.vim
 source ~/.config/nvim/sam/tagbar.vim
-source ~/.config/nvim/sam/lightline.vim
+" source ~/.config/nvim/sam/lightline.vim
 source ~/.config/nvim/sam/folding.vim
 source ~/.config/nvim/sam/searching.vim
 source ~/.config/nvim/sam/statusbar.vim
@@ -73,6 +78,7 @@ source ~/.config/nvim/sam/git.vim
 source ~/.config/nvim/sam/projectionist.vim
 source ~/.config/nvim/sam/fuzzyfinder.vim
 source ~/.config/nvim/sam/grepping.vim
+source ~/.config/nvim/sam/gitgutter.vim
 "
 " " Sane tabs
 " syntax on
