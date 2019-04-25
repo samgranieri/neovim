@@ -94,6 +94,16 @@ Plug 'tpope/vim-rails'
 " Elixir
 Plug 'mhinz/vim-mix-format'
 
+" JavaScript neomake npm haxx
+Plug 'jaawerth/nrun.vim'
+
+" Cool dev icons
+Plug 'ryanoasis/vim-devicons'
+
+Plug 'kyuhi/vim-emoji-complete'
+
+Plug 'junegunn/vim-github-dashboard'
+
 call plug#end()
 
 source ~/.config/nvim/sam/colorscheme.vim

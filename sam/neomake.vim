@@ -5,3 +5,4 @@ augroup END
 
 source ~/.config/nvim/sam/neomake/elixir.vim
 source ~/.config/nvim/sam/neomake/markdown.vim
+source ~/.config/nvim/sam/neomake/javascript.vim
