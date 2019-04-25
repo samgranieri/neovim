@@ -104,6 +104,9 @@ Plug 'kyuhi/vim-emoji-complete'
 
 Plug 'junegunn/vim-github-dashboard'
 
+Plug 'jtratner/vim-flavored-markdown'
+Plug 'nelstrom/vim-markdown-preview'
+
 call plug#end()
 
 source ~/.config/nvim/sam/colorscheme.vim
