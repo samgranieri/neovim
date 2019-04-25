@@ -1,4 +1,5 @@
 nnoremap <C-p> :<C-u>FZF<CR>
+
 function! Fzf_dev()
   function! s:files()
     let files = split(system($FZF_DEFAULT_COMMAND), '\n')
@@ -28,6 +29,5 @@ function! Fzf_dev()
         \ 'options': '-m -x +s',
         \ 'down':    '40%' })
 endfunction
-
 
 command! FilesWithIcon :call Fzf_dev()
