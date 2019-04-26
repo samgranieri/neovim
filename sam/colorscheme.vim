@@ -15,6 +15,8 @@ let g:neosolarized_visibility = "high"
 let g:neosolarized_bold = 1
 let g:neosolarized_underline = 1
 let g:neosolarized_italic = 1
+let g:neosolarized_vertSplitBgTrans = 1
+
 hi! link txtBold Identifier
 " hi! link zshVariableDef Identifier
 " hi! link zshFunction Function

@@ -99,6 +99,7 @@ Plug 'jaawerth/nrun.vim'
 
 " Cool dev icons
 Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 Plug 'kyuhi/vim-emoji-complete'
 
