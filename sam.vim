@@ -132,3 +132,4 @@ source ~/.config/nvim/sam/gitgutter.vim
 "
 " " Sane tabs
 " syntax on
+set clipboard=unnamedplus
