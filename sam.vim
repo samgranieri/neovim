@@ -1,5 +1,5 @@
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
-  
+
   autocmd VimEnter * PlugInstall
 endif
 call plug#begin('~/.config/nvim/plugged')
@@ -100,7 +100,7 @@ Plug 'jaawerth/nrun.vim'
 " Cool dev icons
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
 
 Plug 'kyuhi/vim-emoji-complete'
 
