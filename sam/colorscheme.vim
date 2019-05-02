@@ -17,7 +17,7 @@ let g:neosolarized_underline = 1
 let g:neosolarized_italic = 1
 let g:neosolarized_vertSplitBgTrans = 1
 
-hi! link txtBold Identifier
+" hi! link txtBold Identifier
 " hi! link zshVariableDef Identifier
 " hi! link zshFunction Function
 " hi! link rubyControl Statement

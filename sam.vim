@@ -1,5 +1,4 @@
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
-
   autocmd VimEnter * PlugInstall
 endif
 call plug#begin('~/.config/nvim/plugged')
@@ -8,6 +7,9 @@ call plug#begin('~/.config/nvim/plugged')
 " Plug 'altercation/vim-colors-solarized'
 Plug 'iCyMind/NeoSolarized'
 
+" Cool dev icons
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " File tree
 Plug 'scrooloose/nerdtree'
 
@@ -90,6 +92,7 @@ Plug 'https://gitlab.com/Lenovsky/nuake.git'
 
 " Ruby
 Plug 'tpope/vim-rails'
+Plug 'vim-ruby/vim-ruby'
 
 " Elixir
 Plug 'mhinz/vim-mix-format'
@@ -97,10 +100,6 @@ Plug 'mhinz/vim-mix-format'
 " JavaScript neomake npm haxx
 Plug 'jaawerth/nrun.vim'
 
-" Cool dev icons
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-" Plug 'Xuyuanp/nerdtree-git-plugin'
 
 Plug 'kyuhi/vim-emoji-complete'
 
@@ -108,7 +107,11 @@ Plug 'junegunn/vim-github-dashboard'
 
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'nelstrom/vim-markdown-preview'
+Plug 'edkolev/tmuxline.vim'
 
+Plug 'SirVer/ultisnips'
+
+Plug 'honza/vim-snippets'
 call plug#end()
 
 source ~/.config/nvim/sam/colorscheme.vim

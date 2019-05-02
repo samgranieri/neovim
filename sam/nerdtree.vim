@@ -12,16 +12,31 @@ let g:nerdtree_tabs_focus_on_files = 1
 
 let s:purple = "834F79"
 let s:green = "719e07"
+let s:red = "AE403F"
 let g:NERDTreeExtensionHighlightColor = {} " this line is needed to avoid error
 let g:NERDTreeExtensionHighlightColor['ex'] = s:purple " sets the color of css files to blue
 let g:NERDTreeExtensionHighlightColor['exs'] = s:purple " sets the color of css files to blue
 let g:NERDTreeExtensionHighlightColor['vim'] = s:green " sets the color of css files to blue
+let g:NERDTreeExactMatchHighlightColor = {}
+let g:NERDTreeExactMatchHighlightColor['mix.exs'] = s:purple
+let g:NERDTreeExactMatchHighlightColor['Gemfile'] = s:red
+
+highlight! link NERDTreeFlags NERDTreeDir
+
+
+let NERDTreeHighlightCursorline = 0
+let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
+let g:WebDevIconsNerdTreeBeforeGlyphPadding = ""
+let g:WebDevIconsNerdTreeGitPluginForceVAlign = 0
+let g:WebDevIconsOS = 'Darwin'
+let g:WebDevIconsUnicodeDecorateFolderNodes = v:true
+let g:WebDevIconsUnicodeGlyphDoubleWidth = 0
+let g:NERDTreeDirArrowExpandable = "\u00a0"
+let g:NERDTreeDirArrowCollapsible = "\u00a0"
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols = {} " needed
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['Gemfile'] = 'ƛ'
+let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['Gemfile.lock'] = 'ƛ'
 
 if exists("g:loaded_webdevicons")
   call webdevicons#refresh()
 endif
-let g:WebDevIconsOS = 'Darwin'
-let g:WebDevIconsUnicodeGlyphDoubleWidth = 0
-let g:WebDevIconsNerdTreeGitPluginForceVAlign = 0
-let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
-" let NERDTreeHighlightCursorline = 0
