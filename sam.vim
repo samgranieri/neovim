@@ -112,6 +112,10 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'SirVer/ultisnips'
 
 Plug 'honza/vim-snippets'
+
+Plug 'chrisbra/Colorizer'
+Plug 'jparise/vim-graphql'
+Plug 'christophermca/meta5'
 call plug#end()
 
 source ~/.config/nvim/sam/colorscheme.vim
