@@ -24,7 +24,7 @@ Plug 'tomtom/tcomment_vim'
 
 " Not sure I need this
 Plug 'tpope/vim-sensible'
-Plug 'direnv/direnv.vim'
+" Plug 'direnv/direnv.vim'
 
 " Code syntax
 Plug 'sheerun/vim-polyglot'
@@ -88,7 +88,7 @@ Plug 'tpope/vim-git'
 Plug 'airblade/vim-gitgutter'
 
 " Doom terminal
-Plug 'https://gitlab.com/Lenovsky/nuake.git'
+" Plug 'https://gitlab.com/Lenovsky/nuake.git'
 
 " Ruby
 Plug 'tpope/vim-rails'
@@ -116,6 +116,8 @@ Plug 'honza/vim-snippets'
 Plug 'chrisbra/Colorizer'
 Plug 'jparise/vim-graphql'
 Plug 'christophermca/meta5'
+Plug 'chrisbra/NrrwRgn'
+Plug 'jceb/vim-orgmode'
 call plug#end()
 
 source ~/.config/nvim/sam/colorscheme.vim
