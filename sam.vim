@@ -7,9 +7,6 @@ call plug#begin('~/.config/nvim/plugged')
 " Plug 'altercation/vim-colors-solarized'
 Plug 'iCyMind/NeoSolarized'
 
-" Cool dev icons
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " File tree
 Plug 'scrooloose/nerdtree'
 
@@ -118,6 +115,9 @@ Plug 'jparise/vim-graphql'
 Plug 'christophermca/meta5'
 Plug 'chrisbra/NrrwRgn'
 Plug 'jceb/vim-orgmode'
+Plug 'ryanoasis/vim-devicons'
+" Cool dev icons
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 call plug#end()
 
 source ~/.config/nvim/sam/colorscheme.vim
@@ -138,6 +138,7 @@ source ~/.config/nvim/sam/projectionist.vim
 source ~/.config/nvim/sam/fuzzyfinder.vim
 source ~/.config/nvim/sam/grepping.vim
 source ~/.config/nvim/sam/gitgutter.vim
+source ~/.config/nvim/sam/devicons.vim
 "
 " " Sane tabs
 " syntax on
