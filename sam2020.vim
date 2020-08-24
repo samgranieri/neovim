@@ -27,6 +27,16 @@ Plug 'edkolev/tmuxline.vim'
 " TEXT EDITING
 Plug 'tomtom/tcomment_vim'
 
+" SYNTAX HIGHLIGHTING
+Plug 'elixir-editors/vim-elixir'
+
+" AUTOCOMPLETION
+
+
+Plug 'elixir-lsp/elixir-ls', { 'do': { -> g:ElixirLS.compile() } }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+
 " SEARCHING
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
@@ -49,6 +59,9 @@ source ~/.config/nvim/sam/gitgutter.vim
 
 " TEXT EDITING
 source ~/.config/nvim/sam/tcomment.vim
+
+" AUTOCOMPLETION
+source ~/.config/nvim/sam/coc.vim
 
 " SEARCHING
 source ~/.config/nvim/sam/searching.vim
