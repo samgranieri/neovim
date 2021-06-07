@@ -11,7 +11,7 @@ Plug 'iCyMind/NeoSolarized'
 Plug 'scrooloose/nerdtree'
 
 " Tag Bar
-Plug 'majutsushi/tagbar'
+" Plug 'majutsushi/tagbar'
 
 " Switch back and forth with tmux nicely
 Plug 'christoomey/vim-tmux-navigator'
@@ -70,6 +70,7 @@ Plug 'Shougo/neosnippet-snippets'
 " Seriousy, there's sometimes I just want to have one buffer loaded
 Plug 'schickling/vim-bufonly'
 Plug 'tsandall/vim-rego'
+Plug 'earthly/earthly.vim', { 'branch': 'main' }
 Plug 'vim-scripts/Align'
 
 " Appearance
@@ -118,6 +119,9 @@ Plug 'jceb/vim-orgmode'
 Plug 'ryanoasis/vim-devicons'
 " Cool dev icons
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+" Earthly
+Plug 'earthly/earthly.vim', { 'branch': 'main' }
 call plug#end()
 
 source ~/.config/nvim/sam/colorscheme.vim
@@ -126,7 +130,7 @@ source ~/.config/nvim/sam/nerdtree.vim
 source ~/.config/nvim/sam/tcomment.vim
 source ~/.config/nvim/sam/text.vim
 source ~/.config/nvim/sam/neomake.vim
-source ~/.config/nvim/sam/tagbar.vim
+" source ~/.config/nvim/sam/tagbar.vim
 " source ~/.config/nvim/sam/lightline.vim
 source ~/.config/nvim/sam/folding.vim
 source ~/.config/nvim/sam/searching.vim
