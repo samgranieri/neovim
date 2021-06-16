@@ -122,6 +122,20 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Earthly
 Plug 'earthly/earthly.vim', { 'branch': 'main' }
+
+
+" NVIM 0.5
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" " Plug 'nvim-treesitter/playground'
+" Plug 'neovim/nvim-lspconfig'
+" Plug 'hrsh7th/vim-vsnip'
+" Plug 'hrsh7th/vim-vsnip-integ'
+" Plug 'hrsh7th/nvim-compe'
+" " " dependencies
+" Plug 'nvim-lua/popup.nvim'
+" Plug 'nvim-lua/plenary.nvim'
+" " " telescope
+" Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
 source ~/.config/nvim/sam/colorscheme.vim
@@ -143,7 +157,7 @@ source ~/.config/nvim/sam/fuzzyfinder.vim
 source ~/.config/nvim/sam/grepping.vim
 source ~/.config/nvim/sam/gitgutter.vim
 source ~/.config/nvim/sam/devicons.vim
-"
-" " Sane tabs
+
+" Sane tabs
 " syntax on
 set clipboard=unnamedplus
