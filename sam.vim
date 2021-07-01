@@ -123,6 +123,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " Earthly
 Plug 'earthly/earthly.vim', { 'branch': 'main' }
 
+Plug 'depuracao/vim-rdoc'
 
 " NVIM 0.5
 " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
