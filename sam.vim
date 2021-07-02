@@ -118,6 +118,8 @@ Plug 'jceb/vim-orgmode'
 Plug 'ryanoasis/vim-devicons'
 " Cool dev icons
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ttys3/nvim-blamer.lua'
+
 call plug#end()
 
 source ~/.config/nvim/sam/colorscheme.vim
