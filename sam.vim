@@ -44,7 +44,7 @@ Plug 'tpope/vim-dadbod'
 Plug 'tpope/vim-eunuch'
 
 " Fuzzy finding
-Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " Awesome searchijng
@@ -98,7 +98,6 @@ Plug 'mhinz/vim-mix-format'
 " JavaScript neomake npm haxx
 Plug 'jaawerth/nrun.vim'
 
-
 Plug 'kyuhi/vim-emoji-complete'
 
 Plug 'junegunn/vim-github-dashboard'
@@ -124,6 +123,16 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'earthly/earthly.vim', { 'branch': 'main' }
 
 Plug 'depuracao/vim-rdoc'
+
+" Plug 'folke/which-key.nvim', { 'branch': 'main'}
+"
+" lua << EOF
+"   require("which-key").setup {
+"     -- your configuration comes here
+"     -- or leave it empty to use the default settings
+"     -- refer to the configuration section below
+"   }
+" EOF
 
 " NVIM 0.5
 " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}

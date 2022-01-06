@@ -26,7 +26,7 @@ let g:neomake_elixir_mycredo_maker = {
 call neomake#configure#automake('nrwi')
 
 " let g:mix_format_on_save = 1
-au BufRead,BufNewFile *.eex,*.leex call s:setf('eelixir')
+au BufRead,BufNewFile *.eex,*.leex,*.heex call s:setf('eelixir')
 
 
 function! s:setf(filetype) abort
