@@ -1,0 +1,4 @@
+include_document_start: false
+formatter:
+  indent: 2
+  retain_line_breaks: true
