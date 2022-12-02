@@ -1,2 +1,2 @@
 "" Map leader to ,
-let mapleader=','
+let mapleader=' '

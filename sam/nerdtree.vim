@@ -1,4 +1,4 @@
-nmap <C-n> :NERDTreeToggle<CR>
+nmap <C-n>:NERDTreeToggle<CR>
 
 " nmap <Leader>n :NERDTreeToggle<CR>
 " Make nerdtree look nice

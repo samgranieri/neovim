@@ -8,4 +8,4 @@ noremap <Leader>gb :Gblame<CR>
 noremap <Leader>gd :Gvdiff<CR>
 noremap <Leader>gr :Gremove<CR>
 
-source ~/.config/nvim/sam/git/openchangedfiles.vim
+source $XDG_CONFIG_HOME/nvim/sam/git/openchangedfiles.vim

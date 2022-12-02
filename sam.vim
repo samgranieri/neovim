@@ -1,7 +1,7 @@
-if empty(glob('~/.config/nvim/autoload/plug.vim'))
+if empty(stdpath('config').'/nvim/autoload/plug.vim')
   autocmd VimEnter * PlugInstall
 endif
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin(stdpath('config').'/nvim/plugged')
 
 " Color Schemes
 " Plug 'altercation/vim-colors-solarized'
@@ -121,9 +121,6 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Earthly
 Plug 'earthly/earthly.vim', { 'branch': 'main' }
-
-Plug 'depuracao/vim-rdoc'
-
 " Plug 'folke/which-key.nvim', { 'branch': 'main'}
 "
 " lua << EOF
@@ -148,25 +145,26 @@ Plug 'depuracao/vim-rdoc'
 " Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
-source ~/.config/nvim/sam/colorscheme.vim
-source ~/.config/nvim/sam/airline.vim
-source ~/.config/nvim/sam/nerdtree.vim
-source ~/.config/nvim/sam/tcomment.vim
-source ~/.config/nvim/sam/text.vim
-source ~/.config/nvim/sam/neomake.vim
-" source ~/.config/nvim/sam/tagbar.vim
-" source ~/.config/nvim/sam/lightline.vim
-source ~/.config/nvim/sam/folding.vim
-source ~/.config/nvim/sam/searching.vim
-source ~/.config/nvim/sam/statusbar.vim
-source ~/.config/nvim/sam/abbreviations.vim
-source ~/.config/nvim/sam/leader.vim
-source ~/.config/nvim/sam/git.vim
-source ~/.config/nvim/sam/projectionist.vim
-source ~/.config/nvim/sam/fuzzyfinder.vim
-source ~/.config/nvim/sam/grepping.vim
-source ~/.config/nvim/sam/gitgutter.vim
-source ~/.config/nvim/sam/devicons.vim
+source $XDG_CONFIG_HOME/nvim/sam/colorscheme.vim
+source $XDG_CONFIG_HOME/nvim/sam/airline.vim
+source $XDG_CONFIG_HOME/nvim/sam/nerdtree.vim
+source $XDG_CONFIG_HOME/nvim/sam/tcomment.vim
+source $XDG_CONFIG_HOME/nvim/sam/text.vim
+source $XDG_CONFIG_HOME/nvim/sam/neomake.vim
+" " source $XDG_CONFIG_HOME/nvim/sam/tagbar.vim
+" " source $XDG_CONFIG_HOME/nvim/sam/lightline.vim
+source $XDG_CONFIG_HOME/nvim/sam/folding.vim
+source $XDG_CONFIG_HOME/nvim/sam/searching.vim
+source $XDG_CONFIG_HOME/nvim/sam/statusbar.vim
+source $XDG_CONFIG_HOME/nvim/sam/abbreviations.vim
+source $XDG_CONFIG_HOME/nvim/sam/leader.vim
+source $XDG_CONFIG_HOME/nvim/sam/git.vim
+source $XDG_CONFIG_HOME/nvim/sam/projectionist.vim
+source $XDG_CONFIG_HOME/nvim/sam/fuzzyfinder.vim
+source $XDG_CONFIG_HOME/nvim/sam/grepping.vim
+source $XDG_CONFIG_HOME/nvim/sam/gitgutter.vim
+source $XDG_CONFIG_HOME/nvim/sam/devicons.vim
+source $XDG_CONFIG_HOME/nvim/sam/perl.vim
 
 " Sane tabs
 " syntax on

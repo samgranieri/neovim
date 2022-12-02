@@ -1,2 +1,2 @@
 nmap <C-t> :TagbarToggle<CR>
-source ~/.config/nvim/sam/tagbar/elixir.vim
+source $XDG_CONFIG_HOME/nvim/sam/tagbar/elixir.vim
