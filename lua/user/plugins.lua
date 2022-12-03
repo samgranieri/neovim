@@ -210,6 +210,7 @@ packer.startup(function(use)
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
   })
+  -- nvim-autopaira
   use("lukas-reineke/indent-blankline.nvim")
 
   use({

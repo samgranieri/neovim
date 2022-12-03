@@ -175,7 +175,6 @@ local null_ls_handlers = {
     extra_args = { "--dialect", "postgres", "--config", "/Users/sgranieri/.config/nvim/.sqlfluff" },
   })),
   null_ls.register(diagnostics.shellcheck),
-  null_ls.register(diagnostics.actionlint),
   null_ls.register(diagnostics.jsonlint),
   null_ls.register(diagnostics.yamllint.with({
     args = {
