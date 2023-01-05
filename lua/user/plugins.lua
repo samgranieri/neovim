@@ -170,8 +170,8 @@ packer.startup(function(use)
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
-    "jayp0521/mason-null-ls.nvim",
     "jose-elias-alvarez/null-ls.nvim",
+    "jayp0521/mason-null-ls.nvim",
     "folke/neodev.nvim",
   })
   use("j-hui/fidget.nvim")
@@ -241,7 +241,8 @@ if import_ok then
   import("plugins.cmp")
   import("plugins.comment")
   import("plugins.syntax.custom")
-  import("plugins.lsp")
+  require("plugins.lsp")
+  -- import("plugins.lsp")
   import("plugins.lsp.fidget")
   import("plugins.lsp.keymaps")
   import("plugins.neodev")

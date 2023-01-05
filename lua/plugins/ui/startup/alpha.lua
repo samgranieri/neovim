@@ -1,7 +1,7 @@
 local plugin = require("alpha")
 local dashboard = require("alpha.themes.dashboard")
 
-dashboard.section.header.val = require("plugins.ui.startup.logos.cdel").logo()
+dashboard.section.header.val = require("plugins.ui.startup.logos.wayne_enterprises").logo()
 
 local function button(sc, txt, keybind, keybind_opts)
   local b = dashboard.button(sc, txt, keybind, keybind_opts)
@@ -19,6 +19,7 @@ dashboard.section.buttons.val = {
   button("c", "  Configuration", ":e $MYVIMRC <CR>"),
   button("t", "פּ  File Tree", ":NvimTreeToggle<cr>"),
   button("u", "  Update Plugins", ":PackerSync<cr>"),
+  button("m", "  Mason", ":Mason<cr>"),
   button("f", "  Find ", "<cmd>lua require('fzf-lua').builtin()<CR>")
 }
 -- local function footer()

@@ -35,45 +35,45 @@ lsp.setup(lsp_opts)
 local function on_attach(client, bufnr)
   vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
   vim.api.nvim_buf_set_option(0, "formatexpr", "v:lua.vim.lsp.formatexpr()")
-  -- Configure key mappings
+--   -- Configure key mappings
   require("plugins.lsp.keymaps").setup(client, bufnr)
-  --
-  -- -- Configure highlighting
+--   --
+--   -- -- Configure highlighting
   -- require("config.lsp.highlighter").setup(client, bufnr)
-  --
-  -- -- Configure formatting
+--   --
+--   -- -- Configure formatting
   -- require("config.lsp.null-ls.formatters").setup(client, bufnr)
-
-  -- tagfunc
+--
+--   -- tagfunc
   if client.server_capabilities.definitionProvider then
     vim.api.nvim_buf_set_option(bufnr, "tagfunc", "v:lua.vim.lsp.tagfunc")
   end
-
-  -- aerial.nvim
-
-  -- nvim-navic
+--
+--   -- aerial.nvim
+--
+--   -- nvim-navic
   if client.server_capabilities.documentSymbolProvider then
     local navic = require("nvim-navic")
     navic.attach(client, bufnr)
   end
 end
-
+--
 local lsp_defaults = {
   on_attach = on_attach,
   flags = {
     debounce_text_changes = 1000,
   },
 }
-
+--
 local lspconfig = require("lspconfig")
 local windowconfig = require("lspconfig.ui.windows")
 windowconfig.default_options.border = "rounded"
-
----@diagnostic disable-next-line: missing-parameter
+-- --
+-- @diagnostic disable-next-line: missing-parameter
 local runtime_path = vim.split(package.path, ";")
 table.insert(runtime_path, "lua/?.lua")
 table.insert(runtime_path, "lua/?/init.lua")
-
+--
 lspconfig.util.default_config = vim.tbl_deep_extend("force", lspconfig.util.default_config, lsp_defaults)
 local handlers = {
   -- lspconfig.clangd.setup({}),
@@ -122,13 +122,13 @@ local handlers = {
   }),
 }
 lsp.setup_handlers(handlers)
-
+-- --
 local null_ls = require("null-ls")
 local null_ls_opts = {
   debounce = 1000,
   default_timeout = 10000,
 }
-
+-- --
 local mason_null_ls = require("mason-null-ls")
 local mason_null_ls_opts = {
   debug = true,
@@ -148,18 +148,19 @@ local mason_null_ls_opts = {
     "shellharden",
     "sqlfluff",
     "stylua",
+    "tflint",
     "xmllint",
     "yamlfmt",
     "yamllint",
   },
-  automatic_installation = true,
+  automatic_installation = false,
 }
-mason_null_ls.setup(mason_null_ls_opts)
+mason_null_ls.setup(mason_null_ls_opts) --mason_null_ls_opts)
 local builtins = null_ls.builtins
 local code_actions = builtins.code_actions
 local diagnostics = builtins.diagnostics
 local formatting = builtins.formatting
-
+--
 local null_ls_handlers = {
   null_ls.register(code_actions.gitsigns),
   null_ls.register(diagnostics.actionlint),
