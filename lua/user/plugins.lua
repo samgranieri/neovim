@@ -60,7 +60,7 @@ packer.startup(function(use)
   use({ "akinsho/bufferline.nvim" })
 
   -- File Tree
-  use({ "kyazdani42/nvim-tree.lua", requires = "nvim-tree/nvim-web-devicons" })
+  use({ "nvim-tree/nvim-tree.lua", requires = "nvim-tree/nvim-web-devicons" })
 
   -- Wildmenu
   use({
