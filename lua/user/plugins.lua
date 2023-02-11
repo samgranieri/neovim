@@ -34,6 +34,9 @@ packer.startup(function(use)
   -- Plugin manager
   use({ "wbthomason/packer.nvim" })
 
+  -- Alignment
+  use "vim-scripts/Align"
+
   -- -- Modular Config Reloader
   use({ "miversen33/import.nvim" })
 

@@ -165,7 +165,7 @@ local null_ls_handlers = {
   null_ls.register(code_actions.gitsigns),
   null_ls.register(diagnostics.actionlint),
   null_ls.register(diagnostics.credo),
-  -- null_ls.register(diagnostics.eslint_d),
+  null_ls.register(diagnostics.eslint_d),
   -- null_ls.register(diagnostics.cpplint),
   null_ls.register(diagnostics.hadolint),
   -- null_ls.register(null_ls.builtins.diagnostics.rubocop.with({
@@ -190,7 +190,7 @@ local null_ls_handlers = {
   null_ls.register(formatting.mix),
   -- null_ls.register(formatting.xmllint),
   -- null_ls.register(formatting.clang_format),
-  -- null_ls.register(formatting.prettierd),
+  null_ls.register(formatting.prettierd),
   null_ls.register(formatting.sqlfluff.with({
     extra_args = { "--dialect", "postgres", "--config", "/Users/sgranieri/.config/nvim/.sqlfluff" },
   })),

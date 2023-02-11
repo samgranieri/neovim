@@ -1,7 +1,7 @@
 local plugin = require("alpha")
 local dashboard = require("alpha.themes.dashboard")
 
-dashboard.section.header.val = require("plugins.ui.startup.logos.neovim_banner").logo()
+dashboard.section.header.val = require("plugins.ui.startup.logos.neovim_icon").logo()
 
 local function button(sc, txt, keybind, keybind_opts)
   local b = dashboard.button(sc, txt, keybind, keybind_opts)
