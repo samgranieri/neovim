@@ -101,5 +101,6 @@
         "/Users/sgranieri/.local/share/nvim/site/pack/packer/start/vim-graphql/after",
         "/Users/sgranieri/.local/share/nvim/site/pack/packer/start/vim-rails/after",
         "${3rd}/luassert/library"
-    ]
+    ],
+    "workspace.checkThirdParty": false
 }

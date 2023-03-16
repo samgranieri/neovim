@@ -21,7 +21,7 @@ local lsp_opts = {
     "jsonls",
     "marksman",
     "solargraph",
-    "sumneko_lua",
+    "lua_ls",
     "vimls",
     "yamlls",
     "tsserver",
@@ -90,7 +90,7 @@ local handlers = {
   }),
   lspconfig.solargraph.setup({}),
   lspconfig.rust_analyzer.setup({}),
-  lspconfig.sumneko_lua.setup({
+  lspconfig.lua_ls.setup({
     settings = {
       Lua = {
         runtime = {

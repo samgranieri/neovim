@@ -1,1 +1,0 @@
-Potential breaking change in commit e2144bd of jayp0521/mason-null-ls.nvim/main

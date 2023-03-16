@@ -1,7 +1,7 @@
 local plugin = require("alpha")
 local dashboard = require("alpha.themes.dashboard")
 
-dashboard.section.header.val = require("plugins.ui.startup.logos.neovim_icon").logo()
+dashboard.section.header.val = require("plugins.ui.startup.logos.neovim_banner").logo()
 
 local function button(sc, txt, keybind, keybind_opts)
   local b = dashboard.button(sc, txt, keybind, keybind_opts)
@@ -51,8 +51,8 @@ end
 -- dashboard.section.footer.val = footer()
 
 dashboard.section.footer.opts.hl = "CustomAlpha"
-dashboard.section.header.opts.hl = "CustomAlpha"
--- dashboard.section.header.opts.hl = 'CBBlue'
+-- dashboard.section.header.opts.hl = "CustomAlpha"
+dashboard.section.header.opts.hl = 'CBBlue'
 -- dashboard.section.footer.opts.hl = 'CBBlue'
 -- dashboard.section.buttons.opts.hl = "Comment"
 -- dashboard.section.buttons.opts.hl_shortcut = "Comment"

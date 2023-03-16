@@ -35,7 +35,7 @@ packer.startup(function(use)
   use({ "wbthomason/packer.nvim" })
 
   -- Alignment
-  use "vim-scripts/Align"
+  use("vim-scripts/Align")
 
   -- -- Modular Config Reloader
   use({ "miversen33/import.nvim" })
@@ -47,8 +47,7 @@ packer.startup(function(use)
   use({ "ishan9299/nvim-solarized-lua" })
 
   -- Icons
-  use({ "kyazdani42/nvim-web-devicons" })
-
+  use({"nvim-tree/nvim-web-devicons"})
   -- Bottom UI Decorations
   use({
     "nvim-lualine/lualine.nvim",
@@ -63,7 +62,10 @@ packer.startup(function(use)
   use({ "akinsho/bufferline.nvim" })
 
   -- File Tree
-  use({ "nvim-tree/nvim-tree.lua", requires = "nvim-tree/nvim-web-devicons" })
+  use({
+    "nvim-tree/nvim-tree.lua",
+    commit = "215b29bfad74518442621b9d0483a621483b066b",
+  })
 
   -- Wildmenu
   use({

@@ -33,6 +33,7 @@ end
 function M.info(msg, name)
   vim.notify(msg, vim.log.levels.INFO, { title = name })
 end
+
 function M.is_empty(s)
   return s == nil or s == ""
 end
