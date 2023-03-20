@@ -78,7 +78,7 @@ lspconfig.util.default_config = vim.tbl_deep_extend("force", lspconfig.util.defa
 local handlers = {
   -- lspconfig.clangd.setup({}),
   lspconfig.elixirls.setup({}),
-  -- lspconfig.eslint.setup({}),
+  lspconfig.eslint.setup({}),
   lspconfig.marksman.setup({}),
   lspconfig.jsonls.setup({
     settings = {
@@ -136,7 +136,7 @@ local mason_null_ls_opts = {
     "actionlint",
     "clang_format",
     "cpplint",
-    "eslint_d",
+    "eslint",
     "hadolint",
     "jq",
     "luacheck",
@@ -165,7 +165,7 @@ local null_ls_handlers = {
   null_ls.register(code_actions.gitsigns),
   null_ls.register(diagnostics.actionlint),
   null_ls.register(diagnostics.credo),
-  null_ls.register(diagnostics.eslint_d),
+  null_ls.register(diagnostics.eslint),
   -- null_ls.register(diagnostics.cpplint),
   null_ls.register(diagnostics.hadolint),
   -- null_ls.register(null_ls.builtins.diagnostics.rubocop.with({
