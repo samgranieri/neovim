@@ -227,11 +227,6 @@ packer.startup(function(use)
   if install_plugins then
     packer.sync()
   end
-
-  use({
-    "https://codeberg.org/esensar/nvim-dev-container",
-    requires = { "nvim-treesitter/nvim-treesitter" },
-  })
 end)
 
 if install_plugins then
