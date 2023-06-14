@@ -47,7 +47,7 @@ packer.startup(function(use)
   use({ "ishan9299/nvim-solarized-lua" })
 
   -- Icons
-  use({"nvim-tree/nvim-web-devicons"})
+  use({ "nvim-tree/nvim-web-devicons" })
   -- Bottom UI Decorations
   use({
     "nvim-lualine/lualine.nvim",
@@ -179,7 +179,7 @@ packer.startup(function(use)
     "jayp0521/mason-null-ls.nvim",
     "folke/neodev.nvim",
   })
-  use("j-hui/fidget.nvim")
+  use({ "j-hui/fidget.nvim", tag = "legacy" })
   use("norcalli/nvim-colorizer.lua")
 
   use({
@@ -227,6 +227,11 @@ packer.startup(function(use)
   if install_plugins then
     packer.sync()
   end
+
+  use({
+    "https://codeberg.org/esensar/nvim-dev-container",
+    requires = { "nvim-treesitter/nvim-treesitter" },
+  })
 end)
 
 if install_plugins then

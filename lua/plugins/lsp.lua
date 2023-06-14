@@ -155,7 +155,6 @@ local mason_null_ls_opts = {
   },
   automatic_installation = false,
 }
-mason_null_ls.setup(mason_null_ls_opts) --mason_null_ls_opts)
 local builtins = null_ls.builtins
 local code_actions = builtins.code_actions
 local diagnostics = builtins.diagnostics
@@ -166,12 +165,7 @@ local null_ls_handlers = {
   null_ls.register(diagnostics.actionlint),
   null_ls.register(diagnostics.credo),
   null_ls.register(diagnostics.eslint),
-  -- null_ls.register(diagnostics.cpplint),
   null_ls.register(diagnostics.hadolint),
-  -- null_ls.register(null_ls.builtins.diagnostics.rubocop.with({
-  --   command = "bundle",
-  --   args = { "exec", "rubocop", "-f", "json", "--force-exclusion", "--stdin", "$FILENAME" },
-  -- })),
   null_ls.register(diagnostics.sqlfluff.with({
     extra_args = { "--dialect", "postgres", "--config", "/Users/sgranieri/.config/nvim/.sqlfluff" },
   })),
@@ -188,17 +182,22 @@ local null_ls_handlers = {
   })),
   null_ls.register(formatting.jq),
   null_ls.register(formatting.mix),
-  -- null_ls.register(formatting.xmllint),
-  -- null_ls.register(formatting.clang_format),
   null_ls.register(formatting.prettierd),
   null_ls.register(formatting.sqlfluff.with({
     extra_args = { "--dialect", "postgres", "--config", "/Users/sgranieri/.config/nvim/.sqlfluff" },
   })),
-  -- null_ls.register(null_ls.builtins.formatting.rubocop.with({
+  null_ls.register(formatting.stylua),
+  null_ls.register(formatting.shellharden),
+  null_ls.register(formatting.yamlfmt.with({
+    args = { "-", "--conf", "/Users/sgranieri/.config/nvim/.yamlfmt" },
+  }))
+  
+  -- null_ls.register(diagnostics.cpplint),
+    -- null_ls.register(null_ls.builtins.formatting.rubocop.with({
   --   command = "bundle",
   --   args = {
-  --     "exec",
   --     "rubocop",
+  --     "exec",
   --     "-f",
   --     "--auto-correct",
   --     "quiet",
@@ -207,13 +206,16 @@ local null_ls_handlers = {
   --     "$FILENAME",
   --   },
   -- })),
-  null_ls.register(formatting.stylua),
-  null_ls.register(formatting.shellharden),
-  null_ls.register(formatting.yamlfmt.with({
-    args = { "-", "--conf", "/Users/sgranieri/.config/nvim/.yamlfmt" },
-  })),
+
+  -- null_ls.register(formatting.xmllint),
+  -- null_ls.register(formatting.clang_format),
+  -- null_ls.register(null_ls.builtins.diagnostics.rubocop.with({
+  --   command = "bundle",
+  --   args = { "exec", "rubocop", "-f", "json", "--force-exclusion", "--stdin", "$FILENAME" },
+  -- })),
 }
-mason_null_ls.setup_handlers(null_ls_handlers)
+mason_null_ls.setup(mason_null_ls_opts, null_ls_handlers) --mason_null_ls_opts)
+-- mason_null_ls.setup_handlers(null_ls_handlers)
 
 import("plugins.lsp.handlers", function(lsp_plugin_handlers)
   lsp_plugin_handlers.setup()
