@@ -2,7 +2,6 @@ local plugin = require("alpha")
 local dashboard = require("alpha.themes.dashboard")
 
 dashboard.section.header.val = require("plugins.ui.startup.logos.citybase_engineering").logo()
-
 local function button(sc, txt, keybind, keybind_opts)
   local b = dashboard.button(sc, txt, keybind, keybind_opts)
   b.opts.hl_shortcut = "CustomAlpha"

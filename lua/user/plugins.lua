@@ -48,6 +48,7 @@ packer.startup(function(use)
 
   -- Icons
   use({ "nvim-tree/nvim-web-devicons" })
+
   -- Bottom UI Decorations
   use({
     "nvim-lualine/lualine.nvim",
@@ -126,7 +127,7 @@ packer.startup(function(use)
   use({ "lewis6991/gitsigns.nvim" })
   use({ "tpope/vim-fugitive" })
   use({
-    "TimUntersberger/neogit",
+    "neogitorg/neogit",
     requires = "nvim-lua/plenary.nvim",
   })
 
@@ -222,8 +223,13 @@ packer.startup(function(use)
     "https://codeberg.org/esensar/nvim-dev-container",
     requires = { "nvim-treesitter/nvim-treesitter" },
   })
+  use {
+    "wallpants/github-preview.nvim",
+    tag="v1.16.1"
+  }
 
   use("jparise/vim-graphql")
+  -- use({ "elixir-tools/elixir-tools.nvim", tag = "stable", requires = { "nvim-lua/plenary.nvim" }})
   if install_plugins then
     packer.sync()
   end
@@ -253,6 +259,7 @@ if import_ok then
   import("plugins.neodev")
   import("plugins.mini")
   import("plugins.neogit")
+  import("plugins.ghm")
   import("plugins.nvim-web-devicons")
   import("plugins.syntax.snippets")
   import("plugins.syntax.treesitter")

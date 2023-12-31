@@ -35,23 +35,23 @@ lsp.setup(lsp_opts)
 local function on_attach(client, bufnr)
   vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
   vim.api.nvim_buf_set_option(0, "formatexpr", "v:lua.vim.lsp.formatexpr()")
---   -- Configure key mappings
+  --   -- Configure key mappings
   require("plugins.lsp.keymaps").setup(client, bufnr)
---   --
---   -- -- Configure highlighting
+  --   --
+  --   -- -- Configure highlighting
   -- require("config.lsp.highlighter").setup(client, bufnr)
---   --
---   -- -- Configure formatting
+  --   --
+  --   -- -- Configure formatting
   -- require("config.lsp.null-ls.formatters").setup(client, bufnr)
---
---   -- tagfunc
+  --
+  --   -- tagfunc
   if client.server_capabilities.definitionProvider then
     vim.api.nvim_buf_set_option(bufnr, "tagfunc", "v:lua.vim.lsp.tagfunc")
   end
---
---   -- aerial.nvim
---
---   -- nvim-navic
+  --
+  --   -- aerial.nvim
+  --
+  --   -- nvim-navic
   if client.server_capabilities.documentSymbolProvider then
     local navic = require("nvim-navic")
     navic.attach(client, bufnr)
@@ -76,7 +76,7 @@ table.insert(runtime_path, "lua/?/init.lua")
 --
 lspconfig.util.default_config = vim.tbl_deep_extend("force", lspconfig.util.default_config, lsp_defaults)
 local handlers = {
-  -- lspconfig.clangd.setup({}),
+  lspconfig.clangd.setup({}),
   lspconfig.elixirls.setup({}),
   lspconfig.eslint.setup({}),
   lspconfig.marksman.setup({}),
@@ -190,10 +190,10 @@ local null_ls_handlers = {
   null_ls.register(formatting.shellharden),
   null_ls.register(formatting.yamlfmt.with({
     args = { "-", "--conf", "/Users/sgranieri/.config/nvim/.yamlfmt" },
-  }))
-  
+  })),
+
   -- null_ls.register(diagnostics.cpplint),
-    -- null_ls.register(null_ls.builtins.formatting.rubocop.with({
+  -- null_ls.register(null_ls.builtins.formatting.rubocop.with({
   --   command = "bundle",
   --   args = {
   --     "rubocop",
@@ -208,7 +208,7 @@ local null_ls_handlers = {
   -- })),
 
   -- null_ls.register(formatting.xmllint),
-  -- null_ls.register(formatting.clang_format),
+  null_ls.register(formatting.clang_format),
   -- null_ls.register(null_ls.builtins.diagnostics.rubocop.with({
   --   command = "bundle",
   --   args = { "exec", "rubocop", "-f", "json", "--force-exclusion", "--stdin", "$FILENAME" },
