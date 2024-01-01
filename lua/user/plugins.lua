@@ -65,7 +65,9 @@ packer.startup(function(use)
   -- File Tree
   use({
     "nvim-tree/nvim-tree.lua",
-    commit = "215b29bfad74518442621b9d0483a621483b066b",
+    commit = "dc839a72a6496ce22ebd3dd959115cf97c1b20a0"
+    -- commit = "02ae52357ba4da77a4c120390791584a81d15340"
+    -- commit = "215b29bfad74518442621b9d0483a621483b066b",
   })
 
   -- Wildmenu
@@ -180,7 +182,7 @@ packer.startup(function(use)
     "jayp0521/mason-null-ls.nvim",
     "folke/neodev.nvim",
   })
-  use({ "j-hui/fidget.nvim", tag = "legacy" })
+  use({ "j-hui/fidget.nvim" })
   use("norcalli/nvim-colorizer.lua")
 
   use({

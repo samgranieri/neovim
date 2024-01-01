@@ -42,7 +42,7 @@ local function on_attach(client, bufnr)
   -- require("config.lsp.highlighter").setup(client, bufnr)
   --   --
   --   -- -- Configure formatting
-  -- require("config.lsp.null-ls.formatters").setup(client, bufnr)
+  require("config.lsp.null-ls.formatters").setup(client, bufnr)
   --
   --   -- tagfunc
   if client.server_capabilities.definitionProvider then

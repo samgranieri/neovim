@@ -1,12 +1,21 @@
 local plugin = require("fidget")
 local options = {
-  text = {
-    spinner = "zip",
-    done = "",
+  progress = {
+    display = {
+      done_icon = "",
+      progress_icon = {
+        pattern = "meter",
+      },
+    },
   },
-  align = {
-    bottom = true,
-  },
+--  align = {
+--    bottom = true,
+--  },
 }
 
 plugin.setup(options)
+
+-- text = {
+--  spinner = "zip",
+--  done = "",
+-- },
