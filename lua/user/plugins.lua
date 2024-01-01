@@ -64,10 +64,7 @@ packer.startup(function(use)
 
   -- File Tree
   use({
-    "nvim-tree/nvim-tree.lua",
-    commit = "dc839a72a6496ce22ebd3dd959115cf97c1b20a0"
-    -- commit = "02ae52357ba4da77a4c120390791584a81d15340"
-    -- commit = "215b29bfad74518442621b9d0483a621483b066b",
+    "nvim-tree/nvim-tree.lua"
   })
 
   -- Wildmenu
@@ -196,9 +193,7 @@ packer.startup(function(use)
     "kylechui/nvim-surround",
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features
     config = function()
-      require("nvim-surround").setup({
-        -- Configuration here, or leave empty to use defaults
-      })
+      require("nvim-surround").setup()
     end,
   })
   use("b0o/schemastore.nvim")
